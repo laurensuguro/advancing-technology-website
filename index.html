@@ -10,9 +10,14 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tickets.html">Tickets</a></li>
+        <div class="flex-nav">
+            <div class="flex-nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="flex-nav-link">
+                <a href="tickets.html">Tickets</a>
+            </div>
+        </div>
     </nav>
 
     <header style="background: url('images/conference-hero.jpg')">
@@ -37,7 +42,6 @@
     </section>
 
     <section id="three-points">
-        <div class="wrap">
             <div class="three-points-section">
                 <div class="three-points-section-image">
                     <img src="images/technology-advancement.jpg" alt="vr headset">
@@ -65,131 +69,164 @@
                 <div class="three-points-section-text">
                     <h3>Spend two days in sunny Orlando, FL</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                </div>    
-            </div>        
+                </div>           
     </section>
 
     <section id="table-price">
-        <div class="wrap">
-            <table width="100%">
-                <tr>
-                    <th class="table-name" colspan="4">Reserve Your Spot</th>
-                </tr>
-                <tr>
-                    <th class="table-column">Standard</th>
-                    <th class="table-column">Premium</th>
-                </tr>
-                <tr>
-                    <td>$149</td>
-                    <td>$249</td>
-                <tr>
-                    <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</td>
-                    <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</td>
-                </tr>
-                <tr>
-                    <td><a href="tickets.html" class="button-link">Buy Now</a></td>
-                    <td><a href="tickets.html" class="button-link">Buy Now</a></td>
-                </tr>
-            </table>
-        </div>
+            <h3>Reserve Your Spot</h3>
+            <div class="table">
+                <div class="row">
+                    <div class="column">
+                        <div class="table-head">
+                            Standard
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="table-head">
+                            Premium
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="td">
+                            $149
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="td">
+                            $249
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column">
+                        <div class="td">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo    
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="td">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column">
+                        <div class="td">
+                            <a href="tickets.html" class="button-link">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="td">
+                            <a href="tickets.html" class="button-link">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     
     <section id="speakers">
-        <div class="wrap">
             <h3> Speakers </h3>
-            <div class="speakers-day-1">
-                <h3> DAY 1 </h3>
-                <div class="speaker">
-                    <div class="speakers-day-image">
-                        <img src="images/dude-1.jpg" alt="speaker 1">
-                    </div>  
-                    <div class="speakers-day-text">
-                        <div>Johnny Thompson -- 10AM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <div class="speakers-row">
+                <div class="speakers-day-1">
+                    <h3> DAY 1 </h3>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                            <img src="images/dude-1.jpg" alt="speaker 1">
+                        </div>  
+                        <div class="speakers-day-text">
+                            <div>Johnny Thompson -- 10AM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                            <img src="images/lady-1.jpg" alt="speaker 2">
+                        </div>
+                        <div class="speakers-day-text">
+                            <div>Jane Lewis -- 1PM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                            <img src="images/dude-2.jpg" alt="speaker 3">
+                        </div>
+                        <div class="speakers-day-text">
+                            <div>Tim Meadows -- 4PM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                            <img src="images/lady-2.jpg" alt="speaker 4">
+                        </div>
+                        <div class="speakers-day-text">
+                            <div>Mary Heart -- 7PM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>        
                     </div>
                 </div>
-                <div class="speaker">
-                    <div class="speakers-day-image">
-                        <img src="images/lady-1.jpg" alt="speaker 2">
-                    </div>
-                    <div class="speakers-day-text">
-                        <div>Jane Lewis -- 1PM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="speakers-day-image">
-                        <img src="images/dude-2.jpg" alt="speaker 3">
-                    </div>
-                    <div class="speakers-day-text">
-                        <div>Tim Meadows -- 4PM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="speakers-day-image">
-                        <img src="images/lady-2.jpg" alt="speaker 4">
-                    </div>
-                    <div class="speakers-day-text">
-                        <div>Mary Heart -- 7PM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>        
-                </div>
-            </div>
 
-            <div class="speakers-day-2">
-                <h3> DAY 2 </h3>
-                <div class="speaker">
+                <div class="speakers-day-2">
+                    <h3> DAY 2 </h3>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                            <img src="images/dude-3.jpg" alt="speaker 5">
+                        </div>
+                        <div class="speakers-day-text">
+                            <div>Jim Jones -- 10AM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                        <img src="images/lady-3.jpg" alt="speaker 6">
+                        </div>
+                        <div class="speakers-day-text">
+                            <div>Tammy Dubane -- 1PM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <div class="speakers-day-image">
+                            <img src="images/dude-4.jpg" alt="speaker 7">
+                        </div>
+                        <div class="speakers-day-text">
+                            <div>Froto Baggins -- 4PM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="speaker">
                     <div class="speakers-day-image">
-                        <img src="images/dude-3.jpg" alt="speaker 5">
+                        <img src="images/lady-4.jpg" alt="speaker 8">
                     </div>
-                    <div class="speakers-day-text">
-                        <div>Jim Jones -- 10AM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="speakers-day-text">
+                            <div>Susan Sham -- 7PM</div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>        
                     </div>
-                </div>
-                <div class="speaker">
-                    <div class="speakers-day-image">
-                    <img src="images/lady-3.jpg" alt="speaker 6">
-                    </div>
-                    <div class="speakers-day-text">
-                        <div>Tammy Dubane -- 1PM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="speakers-day-image">
-                        <img src="images/dude-4.jpg" alt="speaker 7">
-                    </div>
-                    <div class="speakers-day-text">
-                        <div>Froto Baggins -- 4PM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                <div class="speakers-day-image">
-                    <img src="images/lady-4.jpg" alt="speaker 8">
-                </div>
-                    <div class="speakers-day-text">
-                        <div>Susan Sham -- 7PM</div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>        
-                </div>
-            </div>    
-        </div>
+                </div>    
+            </div>
     </section>
 
     <section id="ticket-link">
-        <div class="wrap">
+        <div class="ticket-box">
             <h3>What are you waiting for?</h3>
-            <p><a href="tickets.html" class="button-link">Get Tickets</a></p>
             <p>If you are a new developer, this conference is for you!</p>
+            <div class="ticket-link-buttonlink">
+                <a href="tickets.html" class="button-link">Get Tickets</a>
+            </div>
             <p>Countdown timer goes here</p>
         </div>
     </section>
 
     <footer>
-        <div class="wrap">
+        <div class="footer-flex">
             &copy 2019
         </div>
     </footer>
